@@ -2,7 +2,7 @@
 if (process.env.NODE_ENV !== 'production') {
   require('dotenv').load();
 }
-
+console.log('Key: ',process.env.BR_API_KEY)
 const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 8080;
