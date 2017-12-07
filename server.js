@@ -1,7 +1,7 @@
 // API key is stored in a .env as 'BR_API_KEY': '{API KEY}'
 if (process.env.NODE_ENV !== 'production') {
   require('dotenv').load();
-}
+};
 
 const express = require('express');
 const app = express();
@@ -20,4 +20,4 @@ require('./routes/api.js')(app);
 
 app.listen(PORT, () => {
   console.log(`Server is listening on port ${PORT}`);
-})
+});
